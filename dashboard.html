@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <h1 class="app-name">📝SortScope</h1>
+</head>
+<body>
+
+<h1>📊 Student Dashboard</h1>
+
+<div class="menu">
+  <button onclick="displayStudents()">Display</button>
+  <button onclick="sortMarks()">Sort by Marks (High → Low)</button>
+  <button onclick="sortNames()">Sort by Name (A → Z)</button>
+  <button onclick="clearData()"> Clear Data</button>
+</div>
+
+<div id="time"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<br>
+<button onclick="goBack()">⬅ Back</button>
+
+<script src="script.js"></script>
+</body>
+</html>
