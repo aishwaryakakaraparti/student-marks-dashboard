@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-  <h1 class="app-name">📝SortScope</h1>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<h1 class="app-name">📝 SortScope</h1>
 
 <h1>📊 Student Dashboard</h1>
 
 <div class="menu">
-  <button onclick="displayStudents()">Display</button>
-  <button onclick="sortMarks()">Sort by Marks (High → Low)</button>
-  <button onclick="sortNames()">Sort by Name (A → Z)</button>
-  <button onclick="clearData()"> Clear Data</button>
+
+    <button onclick="displayStudents()">
+        Display
+    </button>
+
+    <button onclick="sortMarks()">
+        Sort Marks
+    </button>
+
+    <button onclick="sortNames()">
+        Sort Names
+    </button>
+
+    <button onclick="clearData()">
+        Clear Data
+    </button>
+
 </div>
+
+<br>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchName"
+        placeholder="Search Student"
+    >
+
+    <button onclick="linearSearch()">
+        Linear Search
+    </button>
+
+    <button onclick="binarySearchStudent()">
+        Binary Search
+    </button>
+
+</div>
+
+<br>
+
+<div class="graph-box">
+
+    <button onclick="runDFS()">
+        DFS Demo
+    </button>
+
+    <button onclick="runBFS()">
+        BFS Demo
+    </button>
+
+</div>
+
+<div id="result"></div>
 
 <div id="time"></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Marks</th>
-    </tr>
-  </thead>
-  <tbody id="tableBody"></tbody>
-</table>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
 
 <br>
-<button onclick="goBack()">⬅ Back</button>
+
+<button onclick="goBack()">
+    ⬅ Back
+</button>
 
 <script src="script.js"></script>
+
 </body>
 </html>
